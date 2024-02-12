@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Culture Connect - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Ajout de votre style CSS -->
+    <style>
+        /* Votre style CSS existant */
+        /* Ajout de nouveaux styles */
+        /* Ajoutez ici vos styles supplémentaires */
+        /* Effet de parallaxe */
+        .parallax-section {
+            height: 500px; /* Hauteur de la section */
+            background-image: url('images/london.jpg'); /* Image de fond */
+            background-attachment: fixed; /* Fixe l'image de fond pendant le défilement */
+            background-position: center; /* Position de l'image de fond */
+            background-repeat: no-repeat; /* Répétition de l'image de fond */
+            background-size: cover; /* Taille de l'image de fond */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Effet de survol avec images */
+        .hover-effect {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .hover-effect img {
+            width: 200px; /* Taille des images */
+            margin: 20px; /* Marge entre les images */
+            transition: transform 0.3s ease; /* Transition au survol */
+        }
+
+        .hover-effect img:hover {
+            transform: scale(1.2); /* Agrandit l'image au survol */
+        }
+
+        /* Effet d'animation au survol */
+        .hover-animation {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .hover-animation .animated-item {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: transform 0.3s ease; /* Transition au survol */
+        }
+
+        .hover-animation .animated-item:hover {
+            transform: translateY(-5px); /* Déplace l'élément vers le haut au survol */
+        }
+
+        /* Bouton de retour en haut de page */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none; /* Cache le bouton au début */
+        }
+
+        .back-to-top:hover {
+            background-color: #0056b3;
+        }
+        /* Style pour la section des offres de pass */
+        .pass-offers {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .pass-offer {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .pass-offer h3 {
+            margin-top: 0;
+        }
+
+        .pass-offer p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"> <!-- Ajout de l'identifiant "header" -->
+        <h1>Entrez dans un Monde de Découvertes Culturelles</h1>
+        <h2>Explorez, Apprenez, Émerveillez-vous - Bienvenue sur Culture Connect</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Nos Offres</a></li>
+                <li><a href="recherche.html">Recherche</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="a_propos.html">À Propos</a></li>
+            </ul>
+        </nav>
+        <div class="language-selection">
+            <label for="language">Langue :</label>
+            <select id="language">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+                <option value="th">ไทย</option>
+                <option value="ru">русский</option>
+            </select>
+        </div>
+    </header>
+    <img src="images/london.jpg" alt="Culture Connect Logo">
+        <div class="banner">
+            <h2>Bienvenue sur Culture Connect</h2>
+            <p>Découvrez des lieux culturels uniques à travers le monde et plongez dans l'essence de différentes nations.</p>
+            <a href="#" class="cta-btn">Commencez Votre Voyage Culturel</a>
+        </div>
+    </header>
+    </header>
+    <main>
+        <!-- Ajout de la section de recherche de lieux culturels -->
+        <section class="search">
+            <h2>Recherche de Lieux Culturels</h2>
+            <p>Sélectionnez votre nationalité, le pays et la ville que vous souhaitez explorer pour trouver des lieux culturels correspondants.</p>
+            <form action="#">
+                <label for="nationality">Nationalité :</label>
+                <select id="nationality">
+                    <option value="fr">Français</option>
+                    <option value="en">Anglais</option>
+                    <option value="th">Thaï</option>
+                    <option value="ru">Russe</option>
+                </select>
+                <label for="country">Pays :</label>
+                <select id="country">
+                    <option value="Russia">Russie</option>
+                    <option value="France">France</option>
+                    <option value="Thailand">Thaïlande</option>
+                    <option value="Canada">Canada</option>
+                </select>
+                <button type="submit">Rechercher</button>
+            </form>
+        </section>
+        <!-- Ajout de la section pour les visuels originaux -->
+        <section class="original-visual">
+            <h2>Découvrez le Monde avec Culture Connect</h2>
+            <p>Plongez dans une expérience unique, où chaque destination est une porte ouverte vers la culture et l'aventure. Explorez, apprenez, émerveillez-vous.</p>
+            <!-- Ajoutez des visuels correspondants à votre thématique -->
+        </section>
+        <!-- Ajout de la section pour les offres de pass -->
+        <section class="pass-offers">
+            <h2>Offres de Pass</h2>
+            <p>Découvrez nos pass pour découvrir les merveilles culturelles de chaque ville :</p>
+            <div class="pass-offer">
+                <h3>Pass Découverte Paris</h3>
+                <p>Explorez Paris et bénéficiez d'un accès exclusif à différents lieux culturels.</p>
+                <a href="#">En savoir plus</a>
+            </div>
+            <!-- Ajoutez d'autres offres de pass ici -->
+        </section>
+        <!-- Ajout de la section pour les images qui apparaissent au survol -->
+        <section class="hover-effect">
+            <h2>Images qui apparaissent au survol</h2>
+            <img src="images/paris.jpg" alt="Image 1">
+            <img src="images/paris.jpg" alt="Image 2">
+            <img src="images/paris.jpg" alt="Image 3">
+        </section>
+        <!-- Ajout de la section pour les lieux culturels par catégorie -->
+        <section class="cultural-places">
+            <h2>Lieux Culturels par Catégorie</h2>
+            <!-- Ajoutez des liens vers les pages dédiées pour chaque catégorie de lieux -->
+        </section>
+        <!-- Ajout de la section pour les animations au survol -->
+        <section class="hover-animation">
+            <h2>Animations au survol</h2>
+            <div class="animated-item">Animation 1</div>
+            <div class="animated-item">Animation 2</div>
+            <div class="animated-item">Animation 3</div>
+        </section>
+        <!-- Ajout de la section pour les packages touristiques -->
+        <section class="tour-packages">
+            <h2>Packages Touristiques</h2>
+            <p>Découvrez nos packages pour explorer chaque destination en profondeur :</p>
+            <!-- Ajoutez les packages avec des images, des descriptions et des liens -->
+        </section>
+        <!-- Ajout de la section pour l'appel à l'action -->
+        <div class="cta-section">
+            <h2>Prêt à Commencer Votre Aventure?</h2>
+            <a href="#" class="cta-btn">Commencez Votre Voyage Culturel</a>
+        </div>
+        <!-- Ajout de la section pour le carrousel des destinations à la une -->
+        <section class="carousel">
+            <h2>Destinations à la Une</h2>
+            <p>Découvrez les destinations les plus populaires et explorez leurs richesses culturelles.</p>
+            <div class="carousel">
+                <img src="images/paris.jpg" alt="Paris">
+                <img src="images/paris.jpg" alt="Moscou">
+                <img src="images/paris.jpg" alt="Bangkok">
+            </div>
+        </section>
+        <!-- Ajout de la section pour les catégories de lieux culturels -->
+        <section class="categories">
+            <h2>Catégories de Lieux Culturels</h2>
+            <p>Découvrez des lieux culturels selon différentes catégories :</p>
+            <ul>
+                <li><a href="#">Administration</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Événements</a></li>
+                <li><a href="#">Musées</a></li>
+                <li><a href="#">Sites à Visiter</a></li>
+                <li><a href="#">Hôtels</a></li>
+                <li><a href="#">Boutiques</a></li>
+            </ul>
+        </section>
+        <!-- Ajout de l'élément de chat -->
+        <div class="chat-button" onmouseover="showChat()">Besoin d'aide ? Chattez avec nous !</div>
+        <!-- Ajout de la vidéo de présentation -->
+        <div class="video-container">
+            <h2>Découvrez Culture Connect</h2>
+            <p>Regardez notre vidéo de présentation pour en savoir plus sur notre plateforme.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!-- Ajout du bouton de retour en haut de page -->
+        <div class="back-to-top" onclick="scrollToTop()">Haut de Page</div>
+        <!-- Composant Swiper pour le carrousel -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- Ajoutez ici les boutons de navigation du carrousel si nécessaire -->
+        </div>
+        <!-- Pop-up -->
+        <div class="popup">
+            <!-- Contenu du pop-up -->
+        </div>
+    </main>
+    <section class="testimonials">
+        <h3>Avis de nos Clients</h3>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <i class="fas fa-quote-left"></i>
+                <p>"Une expérience incroyable! Culture Connect a rendu mon voyage inoubliable."</p>
+                <h4>Marie, France</h4>
+            </div>
+            <!-- Autres témoignages -->
+        </div>
+    </section>
+    <section class="reassurance-banner">
+        <h2>Explorez le Monde en Toute Confiance</h2>
+        <p>Nos packages vous offrent une expérience sûre et enrichissante. Découvrez les avantages de voyager avec Culture Connect.</p>
+    </section>
+    <footer>
+    <nav>
+        <ul>
+            <li><a href="mentions_legales.html">Mentions Légales</a></li>
+            <li><a href="politique_confidentialite.html">Politique de Confidentialité</a></li>
+            <li><a href="a_propos.html">À Propos</a></li>
+        </ul>
+    </nav>
+    <!-- Fermeture manquante de la balise div -->
+    <div class="social-media">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <!-- Fin de la balise div -->
+    <p>&copy; 2024 Culture Connect. Tous droits réservés.</p>
+    </footer>
+    
+    <!-- Ajout de la fenêtre pop-up -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Abonnez-vous à notre Newsletter</h2>
+            <p>Recevez des mises à jour exclusives et des offres spéciales directement dans votre boîte de réception.</p>
+            <form action="subscribe.php" method="post">
+                <input type="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+                <button type="submit">S'abonner</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Fonction pour ouvrir la fenêtre pop-up
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        // Fonction pour fermer la fenêtre pop-up
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        // Menu rétractable
+        let prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("header").style.top = "0";
+            } else {
+                document.getElementById("header").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+        // Fonction pour afficher la fenêtre de chat
+        function showChat() {
+            // Code pour ouvrir la fenêtre de chat
+        }
+    </script>
+    <!-- Script pour la bibliothèque Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialisation du carrousel avec Swiper
+        var swiper = new Swiper('.swiper-container', {
+            // Options du carrousel
+            loop: true,
+            autoplay: {
+                delay: 5000, // Définir la durée de chaque diapositive en millisecondes
+            },
+        });
+
+        // Fonction pour faire défiler la page vers le haut
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        // Afficher le bouton de retour en haut de page lorsque l'utilisateur fait défiler
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector('.back-to-top').style.display = 'block';
+            } else {
+                document.querySelector('.back-to-top').style.display = 'none';
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+
+:root {
+    --color-primary: #f2c12e;
+    --color-secondary: #1e90ff; 
+    --color-accent: #228b22; 
+}
+
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: #fff; 
+    color: #333; 
+}
+
+
+header {
+    background-color: var(--color-primary);
+    color: #fff; 
+}
+
+
+.cta-btn {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+
+section {
+    padding: 50px 0;
+}
+
+
+a {
+    color: var(--color-accent);
+}
+
+
+nav ul li a {
+    color: #fff; 
+}
+
+
+#header {
+    background-color: var(--color-primary);
+    transition: top 0.3s; 
+}
+
+/
+.hover-effect img:hover {
+    transform: scale(1.1);
+}
+
+
+.hover-animation .animated-item:hover {
+    transform: translateY(-3px);
+}
+
+
+.back-to-top {
+    background-color: var(--color-secondary);
+}
+
+
+footer nav ul li a {
+    color: var(--color-accent);
+}
